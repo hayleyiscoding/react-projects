@@ -197,6 +197,9 @@ body {
 .justify-end {
   justify-content: flex-end;
 }
+.justify-center {
+  justify-content: center;
+}
 .align-start {
   align-items: flex-start;
 }
@@ -338,6 +341,20 @@ a:hover {
 
 /* Header */
 
-.header--logo_icon {
-  fill: red;
+.header {
+  background-color: #f55a5a;
+  color: white;
+  padding-block: 1rem;
+}
+.header--link {
+  color: white;
+}
+.header--link:hover {
+  color: black;
+}
+
+.header--icon,
+.header--title {
+  margin: 0rem 0.5rem;
+  font-size: 2rem;
 }

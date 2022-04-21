@@ -1,4 +1,5 @@
 // import journalData from "./journalData.js";
+import mapIcon from "../images/map-icon.png";
 
 export default function Article() {
   return (
@@ -10,7 +11,7 @@ export default function Article() {
       />
       <div className='flex column justify-between align-center'>
         <div className='flex justify-between align-center'>
-          <img src='./images/map-icon.png/' alt='icon' />
+          <img src={mapIcon} alt='icon' width='100px' />
           <h5>Japan</h5>
           <a href='https://googlemaps.com'>View on Google Maps</a>
         </div>
