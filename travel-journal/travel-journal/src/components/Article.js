@@ -1,31 +1,27 @@
-// import journalData from "./journalData.js";
 import mapIcon from "../images/map-icon.png";
 
-export default function Article() {
+export default function Article(props) {
   return (
-    <article className='container flex justify-between'>
+    <article className='article flex justify-between'>
       <img
-        src='https://source.unsplash.com/WLxQvbMyfas'
-        alt='Japan'
+        src={props.imageUrl}
+        alt={props.location}
         width='200px'
+        className='col-1 article--img'
       />
-      <div className='flex column justify-between align-center'>
-        <div className='flex justify-between align-center'>
-          <img src={mapIcon} alt='icon' width='100px' />
-          <h5>Japan</h5>
-          <a href='https://googlemaps.com'>View on Google Maps</a>
+      <div className='flex column center align-start col-2'>
+        <div className='flex center'>
+          <img src={mapIcon} alt='icon' width='7px' />
+          <h5 className='article--country_name'>{props.location}</h5>
+          <a href={props.googleMapsUrl} className='article--google_link'>
+            View on Google Maps
+          </a>
         </div>
-        <h2>Mount Fuji</h2>
-        <h6>12 Jan, 2021 - 24 Jan, 2021</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, enim,
-          dicta facilis voluptatem praesentium, eius beatae esse velit nam odio
-          quas excepturi rem mollitia. Quasi id culpa quo provident veritatis.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-          ipsam officia quisquam ad perferendis? Velit esse aut quam et nihil
-          consectetur dolor, iste, dolorem itaque neque delectus excepturi.
-          Provident, rerum?
-        </p>
+        <h2 className='article--title'>{props.title}</h2>
+        <h6 className='article--dates'>
+          {props.startDate} - {props.endDate}
+        </h6>
+        <p className='article--text'>{props.description}</p>
       </div>
     </article>
   );
