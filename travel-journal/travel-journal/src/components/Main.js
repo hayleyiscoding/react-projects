@@ -7,6 +7,7 @@ export default function Main() {
       {journalData.map((e) => {
         return (
           <Article
+            key={e.id}
             title={e.title}
             description={e.description}
             location={e.location}

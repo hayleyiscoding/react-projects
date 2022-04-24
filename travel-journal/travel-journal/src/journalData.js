@@ -1,5 +1,6 @@
 let journalData = [
   {
+    id: 1,
     title: "Mount Fuji",
     location: "Japan",
     googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
@@ -10,6 +11,7 @@ let journalData = [
     imageUrl: "https://source.unsplash.com/WLxQvbMyfas",
   },
   {
+    id: 2,
     title: "Sydney Opera House",
     location: "Australia",
     googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
@@ -20,6 +22,7 @@ let journalData = [
     imageUrl: "https://source.unsplash.com/JmuyB_LibRo",
   },
   {
+    id: 3,
     title: "Geirangerfjord",
     location: "Norway",
     googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
