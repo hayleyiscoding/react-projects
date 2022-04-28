@@ -1,0 +1,236 @@
+/* Meyers CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Resets */
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+input,
+textarea,
+button {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+/* General */
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Container */
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* Flex  */
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 1.3rem;
+}
+.header--col_1 {
+  margin-right: auto;
+}
+.header--logo_text {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.1em;
+  margin-left: 0.5rem;
+}
+.header--col_2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: right;
+}
+
+/* Main and Form */
+.form {
+  display: grid;
+  grid-template: 40px 40px/1fr 1fr;
+  gap: 17px;
+  padding: 2rem;
+}
+.form--input_top,
+.form--input_bottom {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  text-indent: 11px;
+}
+.form--button {
+  grid-column: 1/-1;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: center;
+  letter-spacing: -0.05em;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.form--button:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+}
+.main--meme_image {
+  border-radius: 2px;
+  font-family: "Impact";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: white;
+}
