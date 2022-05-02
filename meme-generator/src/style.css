@@ -229,6 +229,7 @@ body {
 /* Meme Text */
 .meme {
   position: relative;
+  text-align: center;
 }
 
 .meme--image {

@@ -5,7 +5,7 @@ export default function Main() {
   const [meme, setMeme] = React.useState({
     topText: "",
     bottomText: "",
-    randomImage: "",
+    randomImage: "https://mbacenterglobal.com/uploads/images/2022/3/1646300677",
   });
 
   const [allMemeImages, setAllMemeImages] = React.useState(memesData);
@@ -52,10 +52,8 @@ export default function Main() {
         {meme.randomImage && (
           <img src={meme.randomImage} className='meme--image' alt='meme' />
         )}
-        {meme.randomImage && <h2 className='meme--text top'>{meme.topText}</h2>}
-        {meme.randomImage && (
-          <h2 className='meme--text bottom'>{meme.bottomText}</h2>
-        )}
+        <h2 className='meme--text top'>{meme.topText}</h2>
+        <h2 className='meme--text bottom'>{meme.bottomText}</h2>
       </div>
     </main>
   );
