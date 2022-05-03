@@ -11,8 +11,7 @@ export default function Main() {
 
   React.useEffect(() => {
     fetch(`https://api.imgflip.com/get_memes`)
-      .then((response) => response.json())
-
+      .then((res) => res.json())
       .then((data) => setAllMemesData(data.data.memes));
   }, []);
 
