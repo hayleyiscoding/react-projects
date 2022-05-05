@@ -190,7 +190,6 @@ nav {
   background-color: #ffffff;
   padding: 30px 25px;
   height: 60px;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 
@@ -276,16 +275,17 @@ nav.dark .toggler--slider {
 /* Main */
 main {
   padding: 57px 27px;
-  /* background-image: url("./images/background-light.png");
+  background-image: url("./images/background-light.png");
   background-repeat: no-repeat;
-  background-position: right center; */
+  background-position: right center;
   flex: 1 1 auto;
   background-color: white;
   color: #2b283a;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 main.dark {
-  /* background-image: url("./images/background-dark.png"); */
+  background-image: url("./images/background-dark.png");
   background-color: #282d35;
   color: white;
 }
@@ -293,7 +293,7 @@ main.dark {
 .main--title {
   margin: 0;
   font-size: 39px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
 }
 
 .main--facts {
