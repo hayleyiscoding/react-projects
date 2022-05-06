@@ -1,0 +1,236 @@
+/* Meyers CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Resets */
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+input,
+textarea,
+button {
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+/* General */
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: skyblue;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 450px;
+  margin: 2rem auto;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background-color: white;
+}
+
+/* Flex  */
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
+/* Columns */
+.flex-20 {
+  flex: 0 1 20%;
+}
+.flex-75 {
+  flex: 0 1 75%;
+}
+
+/* Main */
+.main {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.main--title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.main--button {
+  background-color: skyblue;
+  padding: 0.5rem 3rem;
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border-radius: 3px;
+}
+.main--button:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+/* User */
+.user {
+  padding: 0.5rem;
+}
+.user--img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.user--name {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+}
+.user--age {
+  color: #617d98;
+  font-size: 1rem;
+  font-weight: 300;
+}

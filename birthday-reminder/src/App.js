@@ -2,7 +2,7 @@ import Main from "./components/Main";
 
 export default function App() {
   return (
-    <div className='container'>
+    <div>
       <Main />
     </div>
   );
