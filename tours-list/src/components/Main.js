@@ -26,13 +26,13 @@ export default function Main() {
     );
   });
 
-  return (
-    <main className='main'>
-      {tourData.length > 0 ? (
-        tourCards
-      ) : (
-        <h2 className='text-center'>Loading...</h2>
-      )}
-    </main>
-  );
+  // if (!tourData) {
+  //   return <h2 className='text-center'>Loading...</h2>;
+  // }
+
+  if (tourData.length === 0) {
+    return <h2 className='text-center'>Loading...</h2>;
+  }
+
+  return <main className='main'>{tourCards}</main>;
 }
